@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ross Parker // Resume</title>
+
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="main.js"></script>
+</head>
+
+
+<body>
+
+    <!-- this is everything that makes up the header component of the page -->
+    <div class="container">
+        <div id="header-container">
+            <h1 class="main-header">Ross Parker</h1>
+            <h3 id="info-about-me" style="font-size:1em;">Full Time Student || (xxx)xxx-xxxx || emailaddress@dnsserver.com</h3>
+
+        </div>
+
+        <nav class="nav-bar">
+            <ul style="list-style: none">
+                <li id="skill-button" class="nav-item" style="-webkit-text-fill-color: var(--skills-color);"><a onclick="skillsClick()">Skills</a> </li>
+                <li id="exp-button" class="nav-item" style="-webkit-text-fill-color: var(--exp-color);"><a onclick="experienceClick()">Work Experience</a> </li>
+                <li id="edu-button" class="nav-item" style="-webkit-text-fill-color: var(--education-color);"><a onclick="educationClick()">Education</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- this is the main content of the page -->
+    <div class="column-container">
+
+        <div class="column" id="column">
+            <span id="intro-text">Hi! My name is <i>Ross Parker</i> and I'm a second year student at Algonquin College where I'm taking the Honours Bachelors of Technology - Business Systems Development course. I am interested in many things that are being covered in my program like software development, business statistics, and operations management. </span>
+            <span id="skill-text" style="display:none; margin:auto;"><b>Applicable Skills:<br></b>Time Management<br>Problem solving<br>Critical Thinking<br>Communication<br>Organization<br>Fast Learner</span>
+            <span id="experience-text" style="display: none; margin:auto;"> <b>Kimberly-Clark || Machine Operator</b></b><br>As a machine operator my job was to ensure that the machines I worked with had as little downtime as possible. We also were responsible for meeting quality standards, and following safety guidelines.<br><br><b>Wimpy's Diner || Line Cook</b><br>As a line cook I was responsible for keeping up with orders, and maintaining perfect food handling practices. </span>
+            <span id="education-text" style="display: none; margin:auto;"><b>Education:<br></b>Algonquin College \\ <i>(Honours) Bachelor of Technology</i> - Business Systems Development </span>
+        </div>
+
+    </div>
+
+
+    <!-- This is a little popup form that could be used to email me directly from my site-->
+    <div id="popup-container" style="visibility:hidden;">
+        <form id="popup-form">
+            <input type="text" id="name" placeholder="Your E-Mail" required />
+
+            <input type="text" id="comments" placeholder="Message" required/>
+
+            <button class="form-button" id="submit-button" style="background: lightgreen;">Submit</button>
+            <button class="form-button" id="cancel-button" style="background: lightcoral;" onclick="openCloseForm()">Cancel</button>
+        </form>
+    </div>
+
+    <img src="thing1.bmp" id="night-sky">
+
+    <footer>Ross Parker  &#169; 2023 || <a class="footer-link" target="_blank" href="https://github.com/RockParker">My Github</a> || <a class="footer-link" onclick="openCloseForm()">Contact Me</a></footer>
+</body>
+</html>
