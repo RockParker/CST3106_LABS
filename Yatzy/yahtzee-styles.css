@@ -1,0 +1,48 @@
+.nav-bar
+{
+    display: none;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+
+    justify-items: start;
+}
+
+table, tbody, th, td
+{
+    border: white 1px solid;
+    padding: 0.3em;
+    text-align: end;
+    min-width: 3em;
+}
+
+.player-clickable
+{
+    cursor:pointer;
+}
+
+.player-selected
+{
+    -webkit-text-fill-color: Green ;
+}
+
+.game
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.dice-img
+{
+    margin: 5px;
+    transition:0.5s;
+}
+
+.blur
+{
+    filter:blur(2px);
+    transition: 0s;
+}
